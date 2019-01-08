@@ -5,9 +5,10 @@ import PropTypes from "prop-types";
 export class ProfileComponent extends Component {
   render() {
     const { profile } = this.props;
+    const { name } = profile;
     return (
       <View>
-        <Text>{JSON.stringify(profile)}</Text>
+        <Text>{name}</Text>
       </View>
     );
   }
