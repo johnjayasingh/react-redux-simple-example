@@ -15,7 +15,8 @@ export class ProfileComponent extends Component {
 }
 
 ProfileComponent.propTypes = {
-  profile: PropTypes.object.isRequired
+  profile: PropTypes.object.isRequired,
+  loadProfile: PropTypes.func.isRequired
 };
 
 export default ProfileComponent;

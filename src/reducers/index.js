@@ -1,13 +1,12 @@
 import { combineReducers } from "redux";
+import { INITIAL_STATE } from "../constants";
 
-const todos = (state = {}, action) => {
+const profile = (state = INITIAL_STATE, action) => {
   return {
-    profile: {
-      name: "new john"
-    }
+    name: `${action.text || "Hello"}`
   };
 };
 
 export default combineReducers({
-  todos
+  profile
 });

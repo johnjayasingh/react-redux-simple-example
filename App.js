@@ -10,7 +10,7 @@ import React, { Component } from "react";
 import { StyleSheet, Text, View } from "react-native";
 
 import styles from "./src/styles";
-import Profile from "./src/components/profile";
+import Profile from "./src/containers/profile";
 import { INITIAL_STATE } from "./src/constants";
 
 import { createStore } from "redux";
