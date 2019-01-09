@@ -8,9 +8,7 @@ const mapStateToProps = (state, ownProps) => {
 
 const mapDispatchToProps = dispatch => {
   return {
-    loadProfile: text => {
-      dispatch(addTodo(text));
-    }
+    loadProfile: text => dispatch(addTodo(text))
   };
 };
 const Profile = connect(
