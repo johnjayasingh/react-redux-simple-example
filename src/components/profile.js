@@ -19,8 +19,9 @@ export class ProfileComponent extends Component {
     const { name } = profile;
     return (
       <View>
+        <Text>Input</Text>
         <TextInput value={name} onChangeText={this.onChange} />
-        <Text>{name}</Text>
+        <Text>Displaying {name}</Text>
       </View>
     );
   }
